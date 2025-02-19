@@ -9,7 +9,6 @@ package-mode = false
 python = "^3.12"
 fastapi = "^0.70.0"
 uvicorn = "^0.15.0"
-python-dotenv = "*"
 langgraph = "*"
 langchain-community = "*"
 langchain-anthropic = "*"
@@ -17,6 +16,7 @@ langchain-openai = "*"
 asyncio = "*"
 tavily-python = "*"
 requests = "^2.32.3"
+python-dotenv = "^1.0.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"

@@ -21,7 +21,6 @@ tool = TavilySearchResults(max_results=4)  # increased number of results
 print(type(tool))
 print(tool.name)
 
-
 class AgentState(TypedDict):
     messages: Annotated[list[AnyMessage], operator.add]
 
@@ -86,24 +85,24 @@ result = abot.graph.invoke({"messages": messages})
 print(result)
 print(result["messages"][-1].content)
 
-# Example that requires multiple tool calls
-messages = [HumanMessage(content="What is the weather in SF and LA?")]
-result = abot.graph.invoke({"messages": messages})
+# # Example that requires multiple tool calls
+# messages = [HumanMessage(content="What is the weather in SF and LA?")]
+# result = abot.graph.invoke({"messages": messages})
 
-print(result)
-print(result["messages"][-1].content)
+# print(result)
+# print(result["messages"][-1].content)
 
 # Example that requires multiple tool calls
 # Note, the query was modified to produce more consistent results.
 # Results may vary per run and over time as search information and models change.
 
-query = "Who won the super bowl in 2024? In what state is the winning team headquarters located? \
-What is the GDP of that state? Answer each question."
-messages = [HumanMessage(content=query)]
+# query = "Who won the super bowl in 2024? In what state is the winning team headquarters located? \
+# What is the GDP of that state? Answer each question."
+# messages = [HumanMessage(content=query)]
 
-model = ChatOpenAI(model="gpt-4o")  # requires more advanced model
-abot = Agent(model, [tool], system=prompt)
-result = abot.graph.invoke({"messages": messages})
+# model = ChatOpenAI(model="gpt-4o")  # requires more advanced model
+# abot = Agent(model, [tool], system=prompt)
+# result = abot.graph.invoke({"messages": messages})
 
-print(result)
-print(result["messages"][-1].content)
+# print(result)
+# print(result["messages"][-1].content)

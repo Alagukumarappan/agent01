@@ -21,4 +21,4 @@ RUN poetry config virtualenvs.create false && poetry install --no-interaction --
 COPY . /app
 
 # Expose the port and run the application using Uvicorn
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "app.LanggraphOpenAIResearchAssistant:app", "--host", "0.0.0.0", "--port", "80"]
