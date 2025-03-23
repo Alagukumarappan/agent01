@@ -1,0 +1,95 @@
+/* Remove the inline style from your .container in the HTML and let CSS handle the width */
+.container {
+    max-width: 600px;       /* Increase or decrease to your liking */
+    margin: 40px auto;      /* Centers the container horizontally and adds top/bottom spacing */
+    padding: 20px;          /* Spacing around the content */
+    background: #f8f9fa;    /* Light gray background */
+    border-radius: 8px;     /* Slightly rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Title styling */
+  h5 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Progress bar container spacing */
+  .mb-2 {
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Customize the progress bar (Bootstrap classes) */
+  .progress {
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+  
+  .progress-bar {
+    transition: width 0.4s ease; /* Smooth animation for progress updates */
+  }
+  
+  /* Row styling for file input and upload button */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Give the file input label a nicer look */
+  .btn-default {
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    color: #495057;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  
+  /* The preview images */
+  .preview {
+    width: 80px;         /* Thumbnail width */
+    height: auto;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Alert styling */
+  .alert {
+    margin-top: 1rem;
+  }
+  
+  /* Card styling */
+  .card {
+    margin-top: 1.5rem;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .card-header {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+  }
+  
+  .list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  .mt-3 {
+    margin-top: 1rem;
+  }
+  
+  .text-end {
+    text-align: end;
+  }
+  
