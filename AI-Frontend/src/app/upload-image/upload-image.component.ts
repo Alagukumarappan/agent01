@@ -1,18 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 import { HttpEventType, HttpResponse } from '@angular/common/http';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Observable } from 'rxjs';
-import { FileUploadServiceService } from "./file-upload-service.service";
+import { FileUploadServiceService } from '../file-upload-service.service';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'app-upload-image',
+  standalone: false,
+  encapsulation: ViewEncapsulation.None,
+  templateUrl: './upload-image.component.html',
+  styleUrl: './upload-image.component.css'
 })
-export class AppComponent implements OnInit {
+export class UploadImageComponent implements OnInit{
+
   title = 'AIFrontned';
   selectedFiles?: FileList;
   progressInfos: any[] = [];
@@ -23,7 +22,7 @@ export class AppComponent implements OnInit {
   constructor(private uploadService: FileUploadServiceService) {}
 
   ngOnInit(): void {
-    this.imageInfos = this.uploadService.getFiles();
+    // this.imageInfos = this.uploadService.getFiles();
   }
 
   selectFiles(event: any): void {
@@ -98,6 +97,4 @@ export class AppComponent implements OnInit {
     //   }
     // });
   }
-  
-  
 }

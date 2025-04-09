@@ -1,0 +1,12 @@
+<p-button type="button" (click)="visibleSidebar1 = true" icon="pi pi-arrow-right">Learn More</p-button>
+
+
+<p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000" [modal]="true">
+    <li *ngFor="let item of sidebarItems" class="menu-item">
+      <a [routerLink]="item.route" (click)="visibleSidebar1 = false" tabindex="0">
+        {{ item.label }}
+        <span *ngIf="item.isNew" class="new-badge">NEW</span>
+      </a>
+    </li>
+  </p-sidebar>
+  

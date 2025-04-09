@@ -1,0 +1,42 @@
+.sidebardiv {
+    width: 250px;
+    background-color: #f9fafb;
+    color: #111827;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: auto;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-item {
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+    transition: background 0.2s;
+  }
+  
+  .menu-item:hover {
+    background-color: #e0f2fe;
+    border-radius: 4px;
+    padding-left: 0.5rem;
+  }
+  
+  .new-badge {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 10px;
+  }
+  
